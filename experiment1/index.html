@@ -1,64 +1,84 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<!-- This title is used for tabs and bookmarks -->
-	<title>Experiment 01 - Hello Glitch</title>
+  <head>
+    <!-- This title is used for tabs and bookmarks -->
+    <title>Experiment 01 - Hello Glitch</title>
 
-	<!-- Use UTF character set, a good idea with any webpage -->
-	<meta charset="UTF-8" />
-	<!-- Set viewport so page remains consistently scaled w narrow devices -->
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Use UTF character set, a good idea with any webpage -->
+    <meta charset="UTF-8" />
+    <!-- Set viewport so page remains consistently scaled w narrow devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-	<!-- Include CSS file, including a site-wide CSS and for this particular page -->
-	<link rel="stylesheet" type="text/css" href="../css/site.css">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
+    <!-- Include CSS file, including a site-wide CSS and for this particular page -->
+    <link rel="stylesheet" type="text/css" href="../css/site.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
 
-	<!-- Load jQuery library -->
-	<script src="https://code.jquery.com/jquery-3.7.1.min.js"
-        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
-        crossorigin="anonymous"></script>
-	<!-- Link to javascript files - DEFER waits until all elements are rendered -->
-    <script type="text/javascript" src="../js/site.js" DEFER></script>
-	<!-- Use me for a JavaScript OOP Project -->
-	<script type="text/javascript" src="./js/project.js" DEFER></script>
-</head>
-<body>
-	<!-- Style this page by changing the CSS in ../css/site.css or css/experiment.css -->
-	<main id="content">
-		<section>
+    <!-- Load jQuery library -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <!-- Link to javascript files - DEFER waits until all elements are rendered -->
+    <script type="text/javascript" src="../js/site.js" defer></script>
+    <!-- Use me for a JavaScript OOP Project -->
+    <script type="text/javascript" src="./js/project.js" defer></script>
+  </head>
+  <body>
+    <!-- Style this page by changing the CSS in ../css/site.css or css/experiment.css -->
+    <main id="content">
+      <section>
+        <h1>Experiment 01 - Hello Glitch</h1>
 
-			<h1>Experiment 01 - Hello Glitch</h1>
+        <div class="minor-section">
+          <div class="glitch-wrapper">
+            <div class="glitch-output">
+              <button id="clicker">New Patch Notes</button>
+              <div id="box"></div>
+            </div>
+          </div>
+        </div>
+        <div class="minor-section">
+          <h2>Description</h2>
+          <p>
+            I want the audience to read these patch notes and laugh about a&rpar; how
+            absurd the implied pre-existing "bug" that the patch-note describes
+            is, and b&rpar; how strange it would be to be the person whose job it is
+            to "fix" the bug. Then, I want them to look at some actual absurd
+            patch notes &lpar;like the ones that this generator was based on&rpar; and
+            realize that there actually ARE bugs this absurd in real video games,
+            and there ARE actual people whose jobs it is to fix these ridiculous
+            bugs--and just revel in the absurdity of it all.
+          </p>
+        </div>
 
-			<div class="minor-section">
-				<div class="glitch-wrapper">
-                    <div class="glitch-output">
-                        <button id="clicker">New Patch Notes</button>
-                        <div id="box"></div>
-                    </div>
-                </div>
-			</div>
-			<div class="minor-section">
-				<h2>Description</h2>
-				<p>What are you trying to acomplish with this experiment?</p>
-			</div>
+        <div class="minor-section">
+          <h2>Technical</h2>
+          <p>
+            A grammar is defined with simple replacement tokens. A replacer()
+            function picks a random replacement for any token that appears in
+            the text.
+          </p>
+        </div>
 
-			<div class="minor-section">
-				<h2>Technical</h2>
-				<p>A grammar is defined with simple replacement tokens. A replacer() function picks a random replacement for any token that appears in the text.</p>
-			</div>
-
-			<div class="minor-section">
-				<h2>Reflection</h2>
-				<p>Each person that worked on the code should reflect on the process, the difficulties, and the successes of the experiment.</p>
-			</div>
-
-		</section>
-		<nav id="links" class="minor-section">
-			<!-- Put link back to homepage here. -->
-            <ul>
-                <li><a href="../index.html">Home</a></li>
-            </ul>
-		</nav>
-	</main>
-</body>
+        <div class="minor-section">
+          <h2>Reflection</h2>
+          <p>
+            I worked alone on this project. The hardest part was getting
+            started; blank canvases are always difficult for me. I was really
+            proud of myself when I thought of moving the content of the template
+            string into individual fillers. I am very pleased with the final
+            result and how absurd the results are while still being completely
+            reasonable patch notes.
+          </p>
+        </div>
+      </section>
+      <nav id="links" class="minor-section">
+        <!-- Put link back to homepage here. -->
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+        </ul>
+      </nav>
+    </main>
+  </body>
 </html>
