@@ -2,7 +2,7 @@
 <html>
 <head>
 	<!-- This title is used for tabs and bookmarks -->
-	<title>Experiment X - Subject/Topic</title>
+	<title>Experiment 3 - Alternate Worlds</title>
 
 	<!-- Use UTF character set, a good idea with any webpage -->
 	<meta charset="UTF-8" />
@@ -22,41 +22,66 @@
 
 	<!-- Link to javascript files - DEFER waits until all elements are rendered -->
     <script type="text/javascript" src="../js/site.js" DEFER></script>
-	<!-- Use me for a JavaScript OOP Project -->
-	<script type="text/javascript" src="./js/project.js" DEFER></script>
+
 	<!-- Use me for a p5.js project -->
 	<script type="text/javascript" src="./js/sketch.js" DEFER></script>
+
 </head>
 <body>
 	<!-- Style this page by changing the CSS in ../css/site.css or css/experiment.css -->
 	<main id="content">
 		<section>
-
-			<h1>Experiment X - Subject/Topic</h1>
-
+			<h1>Experiment 3 - Alternate Worlds</h1>
 			<div class="minor-section">
-				<div id="canvas-container">
+				<div class="no-gap-container">
 					<!-- canvas will be added here -->
+					<button id="reseedButtonOverworld">
+						reseed
+					</button>
+					<span id="seedReportOverworld">seed</span>
+					<hr>
+					<span id="canvasContainerOverworld" style="margin: 10px;"><canvas id="defaultCanvas0" class="p5Canvas" width="640" height="640" style="width: 320px; height: 320px;"></canvas></span>
+					<textarea cols="20" rows="20" id="asciiBoxOverworld" style="opacity: 0.5; letter-spacing: 1ex; width: 320px; margin: 10px; font-family: monospace;"></textarea>
+					<hr>
+				<div class="no-gap-container">
+					<!-- canvas will be added here -->
+					<button id="reseedButtonDungeon">
+						reseed
+					</button>
+					<span id="seedReportDungeon">seed</span>
+					<hr>
+					<span id="canvasContainerDungeon" style="margin: 10px;"><canvas id="defaultCanvas1" class="p5Canvas" width="640" height="640" style="width: 320px; height: 320px;"></canvas></span>
+					<textarea cols="20" rows="20" id="asciiBoxDungeon" style="opacity: 0.5; letter-spacing: 1ex; width: 320px; margin: 10px; font-family: monospace;"></textarea>
+
+					<div class="minor-section">
+						<h2>Description</h2>
+						<p>A desert landscape with a canalized river running though it, and a multi-chamber dungeon with an underwater entrance.</p>
+						<p> Overworld: <br>
+							"." = sand  <br>
+							"_" = sandstone <br>  
+							"=" = grass <br>
+							"~" = water </p>
+						<p> Dungeon: <br>
+							"#" = wall  <br>
+							"." = floor <br>  
+							"~" = water </p>
+						<p> If you watch closely, you might see the air bubbles of a sea creature rise to the surface of the water. </p>
+					</div>
+
+					<div class="minor-section">
+						<h2>Technical</h2>
+						<ul>
+							<li> An autotiling system that generates a bitstring code based on which sides a tile needs to match and a corresponding lookup table.
+							<li> A natural gradient of tiles using Perlin noise forming a canal.
+							<li> A brute-force approach of placing rooms and finding paths between them under a set of constraints.</li>
+						</ul>
+					</div>
+
+					<div class="minor-section">
+						<h2>Reflection</h2>
+						<p> I worked alone on this project. I am so happy with the final result. I am really proud of myself for going above and beyond and figuring out how to work with ChatGPT to create what’s essentially a pathfinding algorithm. I wish I had thought of the bitcode-manipulation tricks I did sooner, I had a lot of failed attempts at getting the outer corner tiles to work.</p>
+					</div>
 				</div>
-                <div class="fullscreen-box">
-                    <button id="fullscreen">Fullscreen</button>
-                </div>
-			</div>
-
-			<div class="minor-section">
-				<h2>Description</h2>
-				<p>What are you trying to acomplish with this experiment?</p>
-			</div>
-
-			<div class="minor-section">
-				<h2>Technical</h2>
-				<p>Describe in detail what you did technically and how it works?</p>
-			</div>
-
-			<div class="minor-section">
-				<h2>Reflection</h2>
-				<p>Each person that worked on the code should reflect on the process, the difficulties, and the successes of the experiment.</p>
-			</div>
 
 		</section>
 		<nav id="links" class="minor-section">
