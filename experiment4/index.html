@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- This title is used for tabs and bookmarks -->
+	<title>Experiment 4 - Infinite Worlds</title>
+
+	<!-- Use UTF character set, a good idea with any webpage -->
+	<meta charset="UTF-8" />
+	<!-- Set viewport so page remains consistently scaled w narrow devices -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<!-- Include CSS file, including a site-wide CSS and for this particular page -->
+	<link rel="stylesheet" type="text/css" href="../css/site.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<!-- Load jQuery library -->
+	<script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+        crossorigin="anonymous"></script>
+	<!-- Load p5.js library -->
+	<script src="https://cdn.jsdelivr.net/npm/p5@1.9.2/lib/p5.js"></script>
+
+	<!-- Link to javascript files - DEFER waits until all elements are rendered -->
+    <script type="text/javascript" src="../js/site.js" DEFER></script>
+
+	<script type="text/javascript" src="./js/xxhash.min.js" DEFER></script>
+
+	<!-- Use me for a p5.js project -->
+	<script type="text/javascript" src="./js/sketch.js" DEFER></script>
+
+
+</head>
+<body>
+	<!-- Style this page by changing the CSS in ../css/site.css or css/experiment.css -->
+	<main id="content">
+		<section>
+			<h1>Experiment 4 - Infinite Worlds</h1>
+			<div class="minor-section">
+				<div class="no-gap-container">
+					<!-- canvas will be added here -->
+					<span id="canvasContainer1" style="margin: 10px;"><canvas id="defaultCanvas0" class="p5Canvas" width="400" height="200" style="width: 400px; height: 200px;"></canvas></span>
+					<hr>
+				</div>
+				<div class="no-gap-container">
+					<span id="canvasContainer2" style="margin: 10px;"><canvas id="defaultCanvas1" class="p5Canvas" width="400" height="200" style="width: 400px; height: 200px;"></canvas></span>
+					<hr>
+				</div>
+				<div class="no-gap-container">
+					<span id="canvasContainer3" style="margin: 10px;"><canvas id="defaultCanvas1" class="p5Canvas" width="400" height="400" style="width: 400px; height: 200px;"></canvas></span>
+					<hr>
+				</div>
+					<div class="minor-section">
+						<h2>Description</h2>
+						<p>A desert landscape with a canalized river running though it, and a multi-chamber dungeon with an underwater entrance.</p>
+						<p> Overworld: <br>
+							"." = sand  <br>
+							"_" = sandstone <br>  
+							"=" = grass <br>
+							"~" = water </p>
+						<p> Dungeon: <br>
+							"#" = wall  <br>
+							"." = floor <br>  
+							"~" = water </p>
+						<p> If you watch closely, you might see the air bubbles of a sea creature rise to the surface of the water. </p>
+					</div>
+
+					<div class="minor-section">
+						<h2>Technical</h2>
+						<ul>
+							<li> An autotiling system that generates a bitstring code based on which sides a tile needs to match and a corresponding lookup table.
+							<li> A natural gradient of tiles using Perlin noise forming a canal.
+							<li> A brute-force approach of placing rooms and finding paths between them under a set of constraints.</li>
+						</ul>
+					</div>
+
+					<div class="minor-section">
+						<h2>Reflection</h2>
+						<p> I worked alone on this project. I am so happy with the final result. I am really proud of myself for going above and beyond and figuring out how to work with ChatGPT to create what’s essentially a pathfinding algorithm. I wish I had thought of the bitcode-manipulation tricks I did sooner, I had a lot of failed attempts at getting the outer corner tiles to work.</p>
+					</div>
+					<div class="minor-section">
+					<p> (using tiles from <a href="https://thkaspar.itch.io/micro-tileset-overworld-dungeon">Micro Tileset - Overworld & Dungeon</a> by <a href="https://thkaspar.itch.io/">thkaspar</a> </p>
+					</div>
+				</div>
+
+		</section>
+		<nav id="links" class="minor-section">
+			<!-- Put link back to homepage here. -->
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+            </ul>
+		</nav>
+	</main>
+</body>
+</html>
