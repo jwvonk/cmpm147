@@ -51,34 +51,70 @@
 				</div>
 					<div class="minor-section">
 						<h2>Description</h2>
-						<p>A desert landscape with a canalized river running though it, and a multi-chamber dungeon with an underwater entrance.</p>
-						<p> Overworld: <br>
-							"." = sand  <br>
-							"_" = sandstone <br>  
-							"=" = grass <br>
-							"~" = water </p>
-						<p> Dungeon: <br>
-							"#" = wall  <br>
-							"." = floor <br>  
-							"~" = water </p>
-						<p> If you watch closely, you might see the air bubbles of a sea creature rise to the surface of the water. </p>
+						<h3><a href=https://old-ocean.glitch.me>Old Ocean</a></h3>
+						<p> Infinity: <br>
+							I used the infinite extent of my world to represent a churning ocean that slowly evaporates before your eyes, as inspired by this image of the Aral Sea:
+						</p>
+							<div class="image-wrapper">
+								<img src="img/aral-sea.png">
+							</div>
+						<p>Variation in Space: <br>
+							As the audience browses my world, they’ll see ships of varying sizes dotting the seascape, which itself varies in its composition between angular tiles and rounded tiles.<br>
+							If you linger too long in one area the water on-screen will slowly turn to sand, creating further variation between areas of differing fluidity.
+						</p>
+						<p>Variations in Key: <br>
+							Different worlds will have ships with differently-colored flags, different tile shape distributions, and different elevation distributions in deserts.
+						</p>
+						<p>Signs of Life:<br>
+							The passage of time results in the churning of the ocean waves and the traversal of the ships across them, while clicking ocean tiles causes a ripple effect.
+						</p>
+						<hr>
+						<h3><a href=https://endless-garden.glitch.me>Endless Garden</a></h3>
+						<p> Infinity: <br>
+							I used the infinite extent of my world to represent grassy hills covered in flowers, as insipred by this image of Carrizo Plain:
+						</p>
+							<div class="image-wrapper">
+								<img src="img/carrizo-plain.png">
+							</div>
+						<p>Variation in Space: <br>
+							As the audience browses my world, they’ll see ships areas of flat, barren plains and areas of grassy hills partially covered in seeds. The color of the flowers these seeds produce also varies by location.
+						</p>
+						<p>Variations in Key: <br>
+							Different worlds will have different distributions of seeds, as well as differently-colored flowers produced by those seeds.
+						</p>
+						<p>Signs of Life:<br>
+							Clicking tiles causes a ripple effect which instigates the growth of any seeds it touches, while the passage of time results in the growth of said seeds into colorful flowers.
+						</p>
+						<hr>
+						<h3><a href=https://infinite-volcano.glitch.me>Infinite Volcano</a></h3>
+						<p> Infinity: <br>
+							I used the infinite extent of my world to represent an infinite archipegalo of volcanic islands, as inspired by this image of Whakaari:
+						</p>
+							<div class="image-wrapper">
+								<img src="img/whakaari.png">
+							</div>
+						<p>Variation in Space: <br>
+							As the audience browses my world, they’ll see volcanic isles of varying shapes, sizes, and topographies spanning the seascape, some of which may even be active.
+						</p>
+						<p>Variations in Key: <br>
+							Different worlds will have different topographies for the isles, potentially altering the flow of lava accross them or even creating new eruptions. Also, the coloration of the isles will change.
+						</p>
+						<p>Signs of Life:<br>
+							Clicking island tiles creates a new lava source, while the passage of time results in the creeping of said lava down the ridges of the islands towards the water.
+						</p>
 					</div>
-
 					<div class="minor-section">
 						<h2>Technical</h2>
 						<ul>
-							<li> An autotiling system that generates a bitstring code based on which sides a tile needs to match and a corresponding lookup table.
-							<li> A natural gradient of tiles using Perlin noise forming a canal.
-							<li> A brute-force approach of placing rooms and finding paths between them under a set of constraints.</li>
+							<li> Perlin-noise-based wave/terrain generation and flower placement.
+							<li> Ships that travel between tiles adjust their position/orientation based on interpolation between source elevation and destination elevation.
+							<li> Lava that uses a frontier-based system to propagate to tiles of lower elevations.</li>
 						</ul>
 					</div>
 
 					<div class="minor-section">
 						<h2>Reflection</h2>
-						<p> I worked alone on this project. I am so happy with the final result. I am really proud of myself for going above and beyond and figuring out how to work with ChatGPT to create what’s essentially a pathfinding algorithm. I wish I had thought of the bitcode-manipulation tricks I did sooner, I had a lot of failed attempts at getting the outer corner tiles to work.</p>
-					</div>
-					<div class="minor-section">
-					<p> (using tiles from <a href="https://thkaspar.itch.io/micro-tileset-overworld-dungeon">Micro Tileset - Overworld & Dungeon</a> by <a href="https://thkaspar.itch.io/">thkaspar</a> </p>
+						<p> I worked alone for this project. I am super happy with my first two worlds. I really struggled with getting the logic for angling the ships right in world 1, but I think the final product is very satisfying. I love the way the color variation of the flowers turned out in world 2. I wish I had more time to make the lava in my third world juicier; As it stands it's a bit underwhelming.</p>
 					</div>
 				</div>
 
